@@ -52,7 +52,7 @@ const onhandleSubmit = (e) =>{
           showConfirmButton: false,
           position: 'center',
         })
-        history.push('/')
+        history.push('/home')
     }
  }).catch((e)=>{
    console.log(e);
@@ -81,7 +81,7 @@ return (
         <input type="text" name="gender" placeholder="gender" required="required" onChange={onhandleChange} />
         <input type="text" name="language" placeholder="language" required="required" />
         <button type="button" class="btn btn-primary btn-block btn-large" onClick={onhandleSubmit}>Register</button>
-        <Link to="/login" style={{color:"yellow"}} >Already Registered Login</Link>
+        <Link to="/" style={{color:"yellow"}} >Already Registered Login</Link>
     </form>
 </div>
 )

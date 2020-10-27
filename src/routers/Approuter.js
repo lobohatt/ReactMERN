@@ -18,8 +18,8 @@ const Approuter = () => (
  <Router history={history}>
  <div>
     <Switch>
-     <Route path="/" component={Home} exact={true}/>
-     <Route path="/login" component={Login}/>
+     <Route path="/" component={Login} exact={true}/>
+     <Route path="/home" component={Home}/>
      <Route path="/signup" component={Signup}/>
      <Route path="/profile"   component={userprofile}/>
      <Route path="/updateprofile"   component={UpdateProfile}/>

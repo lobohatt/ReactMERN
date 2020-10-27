@@ -21,7 +21,7 @@ const token = localStorage.getItem('token');
  }).catch((e)=>{
 console.log(e);
  })
- history.push('/login')
+ history.push('/')
  Swal.fire({
           title: 'Logout Sucessfullly',
           icon: 'success',

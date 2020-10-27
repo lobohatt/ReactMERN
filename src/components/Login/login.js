@@ -62,7 +62,7 @@ const Login = ()=>{
           const data = res.data.token
        localStorage.setItem('token',data)
        setuserDetails({email:'',password:''});
-       history.push("/")
+       history.push("/home")
       Swal.fire({
           title: 'Loggedin Successfully',
           icon: 'success',
